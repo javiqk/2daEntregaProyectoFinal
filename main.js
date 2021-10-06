@@ -102,11 +102,12 @@ const products = [
 	},
 ];
 
-
+/*Constantes getElement*/
 const gridContainer = document.getElementById("js-gridContainer");
 const searchInput = document.getElementById("js-searchInput");
 const searchButton = document.getElementById("js-searchButton");
 
+/*Constante para añadir los productos al html*/
 const htmlTemplate = (product) => {
 	return `<div class="card">
                 <p class="card__name">${product.name}</p>
@@ -115,6 +116,7 @@ const htmlTemplate = (product) => {
             </div>`;
 };
 
+/*Constante para renderizar*/
 const renderHTML = (products, container) => {
 	container.innerHTML = "";
 	if (products.length > 0) {
@@ -130,6 +132,7 @@ const renderHTML = (products, container) => {
 
 renderHTML(products, gridContainer);
 
+/*Funcion constante para filtrar los productos del html*/
 const filterProducts = () => {
 	const searchInputValue = searchInput.value;
 
@@ -147,6 +150,9 @@ const filterProducts = () => {
 	renderHTML(filteredProducts, gridContainer);
 };
 
+/*Eventos*/
 searchButton.addEventListener("click", filterProducts);
 
 searchInput.addEventListener("keyup", filterProducts);
+
+
