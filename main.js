@@ -102,10 +102,10 @@ const products = [
 	},
 ];
 
-/*Constantes getElement*/
-const gridContainer = document.getElementById("js-gridContainer");
-const searchInput = document.getElementById("js-searchInput");
-const searchButton = document.getElementById("js-searchButton");
+/*Constantes jquery*/
+const gridContainer = $("#js-gridContainer");
+const searchInput = $("#js-searchInput");
+const searchButton = $("#js-searchButton");
 
 /*Constante para añadir los productos al html*/
 const htmlTemplate = (product) => {
