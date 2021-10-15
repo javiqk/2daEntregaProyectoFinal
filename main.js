@@ -157,5 +157,8 @@ searchInput.addEventListener("keyup", filterProducts);
 
 
 /*Jquery*/
-let locales = $(".locals");
+let locales = $("li");
 console.log (locales);
+
+let localesCaba = $(".locals");
+console.log (localesCaba);
