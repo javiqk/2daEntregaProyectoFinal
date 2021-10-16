@@ -46,7 +46,10 @@ body {
 
 .container {
 	width: 80vw;
-    padding-bottom: 60px;
+}
+
+.container__grid {
+	padding-bottom: 30px;
 }
 
 .container__grid {
@@ -68,6 +71,7 @@ body {
 	flex-direction: column;
 	min-height: 10rem;
 	max-height: 15rem;
+	border-radius: 30px;
 }
 
 .card__name {
@@ -156,4 +160,13 @@ div li {
 	  padding-right: 10px;
 	  font-size: 18px;
 	  font-weight: bolder;
+  }
+
+  ul li {
+	  font-size: 12px;
+	  display: inline-block;
+  }
+
+  .locales__title--position {
+	  text-align: center;
   }

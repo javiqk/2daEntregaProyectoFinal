@@ -6,3 +6,16 @@ body {
 .card {
 	background: hsl(0, 0%, 15%);
 }
+
+.container__message {
+	color: rgb(15, 15, 15);
+}
+
+.searchBar__title {
+	color: rgb(206, 199, 199);
+}
+
+.searchBar__button {
+	background: #333;
+	color: rgb(173, 173, 173);
+}
