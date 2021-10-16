@@ -26,7 +26,6 @@ body {
 }
 
 .searchBar__title {
-	color: rgb(31, 1, 1);
 	flex-basis: 50%;
 	flex-grow: 1;
     font-weight: bolder;
@@ -38,8 +37,6 @@ body {
 }
 
 .searchBar__button {
-	background: white;
-	color: black;
 	min-height: 1.5em;
 	flex-grow: 1;
 	border: none;
@@ -61,12 +58,10 @@ body {
 .container__message {
 	text-align: center;
 	font-size: 2rem;
-	color: white;
 	grid-column: 1/10;
 }
 
 .card {
-	background: #b4b4fd;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -96,8 +91,8 @@ div li {
 .switch {
 	position: relative;
 	display: inline-block;
-	width: 60px;
-	height: 34px;
+	width: 40px;
+	height: 20px;
   }
   
   .switch input { 
@@ -121,21 +116,21 @@ div li {
   .slider:before {
 	position: absolute;
 	content: "";
-	height: 26px;
-	width: 26px;
-	left: 4px;
-	bottom: 4px;
+	height: 18px;
+	width: 18px;
+	left: 1px;
+	bottom: 2px;
 	background-color: white;
 	-webkit-transition: .4s;
 	transition: .4s;
   }
   
   input:checked + .slider {
-	background-color: #2196F3;
+	background-color: rgb(17, 17, 17);
   }
   
   input:focus + .slider {
-	box-shadow: 0 0 1px #2196F3;
+	box-shadow: 0 0 1px rgb(17, 17, 17);
   }
   
   input:checked + .slider:before {
@@ -146,9 +141,19 @@ div li {
   
   /* Rounded sliders */
   .slider.round {
-	border-radius: 34px;
+	border-radius: 35px;
   }
   
   .slider.round:before {
-	border-radius: 50%;
+	border-radius: 60%;
+  }
+
+  .dark__display h2, label {
+	  display: inline-block;
+  }
+
+  h2 {
+	  padding-right: 10px;
+	  font-size: 18px;
+	  font-weight: bolder;
   }

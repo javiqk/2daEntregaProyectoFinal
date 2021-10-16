@@ -3,3 +3,19 @@ body {
     background-color: rgb(211, 207, 207);
 }
 
+.card {
+	background: #b4b4fd;
+}
+
+.container__message {
+	color: white;
+}
+
+.searchBar__title {
+	color: rgb(31, 1, 1);
+}
+
+.searchBar__button {
+	background: white;
+	color: black;
+}

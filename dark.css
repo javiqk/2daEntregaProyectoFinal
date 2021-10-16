@@ -3,3 +3,6 @@ body {
     background-color: #333;
 }
 
+.card {
+	background: hsl(0, 0%, 15%);
+}
