@@ -113,6 +113,7 @@ const htmlTemplate = (product) => {
                 <p class="card__name">${product.name}</p>
                 <p class="card__category">${product.category}</p>
                 <p class="card__price">$${product.price}</p>
+				<button class="btnComprar">Comprar</button>
             </div>`;
 };
 
@@ -162,3 +163,4 @@ console.log (locales);
 
 let localesCaba = $(".locals");
 console.log (localesCaba);
+
