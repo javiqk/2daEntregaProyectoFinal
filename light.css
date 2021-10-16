@@ -1,14 +1,15 @@
 body {
     color: rgb(0, 0, 0);
-    background-color: rgb(211, 207, 207);
+    background-color: rgb(250, 236, 218);
 }
 
 .card {
-	background: #b4b4fd;
+	background: rgb(240, 204, 156);
 }
 
 .container__message {
 	color: white;
+    background-color: rgb(209, 166, 109);
 }
 
 .searchBar__title {
@@ -18,4 +19,8 @@ body {
 .searchBar__button {
 	background: white;
 	color: black;
+}
+
+.locales__title--background h2 {
+    background-color: cadetblue;
 }

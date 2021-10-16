@@ -164,6 +164,7 @@ console.log (locales);
 let localesCaba = $(".locals");
 console.log (localesCaba);
 
+/*Jquery dark mode*/
 $(".checkbox").click(function() {
 	if ($("input.checkbox").is(":checked")){
 		$(".theme").attr("href", "dark.css");

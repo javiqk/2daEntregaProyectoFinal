@@ -8,7 +8,8 @@ body {
 }
 
 .container__message {
-	color: rgb(15, 15, 15);
+	color: rgb(0, 0, 0);
+    background-color: rgb(43, 39, 39);
 }
 
 .searchBar__title {
