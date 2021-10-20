@@ -115,6 +115,7 @@ const htmlTemplate = (product) => {
                 <p class="card__price">$${product.price}</p>
 				<button id="btn">Comprar</button>
             </div>`;
+			
 };
 
 /*Constante para renderizar*/
@@ -173,3 +174,21 @@ $(".checkbox").click(function() {
 		$(".theme").attr("href", "light.css");
 	}
 });
+
+
+
+$("body").prepend('<p class="titulo">¡Bienvenido a Monkey®!</p>');
+$(".titulo").animate({  left:'150px',
+                        opacity:'0.4',
+                        height:'150px',
+                        width:'200px'   }, 
+                        "500",            
+                        function(){        
+                            $(".titulo").fadeOut(4000);
+                        });
+
+$("body").prepend('<p id="p1">Hola</p>');
+	$("#p1").css("color", "#333")
+        .slideDown(2000)
+        .delay(1000)
+        .fadeOut(2000);
