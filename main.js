@@ -179,7 +179,7 @@ $(".checkbox").click(function() {
 
 $("body").prepend('<p class="titulo">¡Bienvenido a Monkey®!</p>');
 $(".titulo").animate({  left:'150px',
-                        opacity:'0.4',
+                        opacity:'0.7',
                         height:'150px',
                         width:'200px'   }, 
                         "500",            
