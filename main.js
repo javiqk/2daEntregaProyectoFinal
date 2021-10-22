@@ -4,6 +4,7 @@ const products = [
 		name: "Space",
 		category: "Remera",
 		price: 1200,
+		image: "imagenes/buzoEspacial.jpg",
 	},
 	{
 		name: "Bart",
@@ -113,6 +114,7 @@ const htmlTemplate = (product) => {
                 <p class="card__name">${product.name}</p>
                 <p class="card__category">${product.category}</p>
                 <p class="card__price">$${product.price}</p>
+				<img src="" class="card__image">${product.image}</img>
 				<button id="btn">Comprar</button>
             </div>`;
 			
@@ -178,7 +180,7 @@ $(".checkbox").click(function() {
 
 
 $("body").prepend('<p class="titulo">¡Bienvenido a Monkey®!</p>');
-$(".titulo").animate({  left:'150px',
+$(".titulo").animate({  left:'200px',
                         opacity:'0.7',
                         height:'150px',
                         width:'200px'   }, 
@@ -192,3 +194,29 @@ $("body").prepend('<p id="p1">Hola</p>');
         .slideDown(2000)
         .delay(1000)
         .fadeOut(2000);
+		
+$(document).ready(function () {
+	const APIURL = "https://jsonplaceholder.typicode.com/posts";
+
+	const infoPost = {
+		nombre: "Javier",
+		profesion: "Programador",
+	};
+
+	$("body").append(
+		'<button id="post" class="btn btn-success m-2">ENVIAR PETICION POST</button>'
+	);
+
+	$("#post").click(() => {
+		$.ajax({
+			method: "POST",
+			url: APIURL,
+			data: infoPost,
+			success: function (res) {
+				$(".row").append(
+					`<div class="text-success h3">Guardado Exitoso: ${res.nombre}, ${res.profesion}</div>`
+				);
+			},
+		});
+	});
+});

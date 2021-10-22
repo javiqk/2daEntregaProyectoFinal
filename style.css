@@ -182,3 +182,22 @@ div li {
 	padding-right: 10px;
 	font-weight: bolder;
 }
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(250, 236, 218);
+}
+#seccionContacto__titulo {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bolder;
+	font-size: 2.5rem;
+	font-style: italic;
+}
+
+.active {
+	font-weight: bold;
+}
+
