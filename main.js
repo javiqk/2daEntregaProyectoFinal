@@ -2,104 +2,122 @@
 const products = [
 	{
 		name: "Space",
-		category: "Remera",
-		price: 1200,
-		image: "imagenes/buzoEspacial.jpg",
+		category: "Buzo",
+		price: 2500,
+		image : "buzoEspacial"
 	},
 	{
 		name: "Bart",
 		category: "Remera",
 		price: 1200,
+		image : "remeraBart"
 	},
 	{
-		name: "Lisa",
+		name: "Abeja",
 		category: "Remera",
 		price: 1200,
-	},
-	{
-		name: "Gato",
-		category: "Remera",
-		price: 1200,
-	},
-	{
-		name: "Palta",
-		category: "Remera",
-		price: 1200,
-	},
-	{
-		name: "Papas Fritas",
-		category: "Remera",
-		price: 1200,
-	},
-	{
-		name: "Gatitos",
-		category: "Buzo",
-		price: 2000,
+		image : "remeraAbeja"
 	},
 	{
 		name: "Arcoiris",
-		category: "Buzo",
-		price: 2000,
+		category: "Remera",
+		price: 1200,
+		image : "remeraArcoiris"
 	},
 	{
-		name: "Policía",
+		name: "Donut",
+		category: "Remera",
+		price: 1200,
+		image : "remeraDonut"
+	},
+	{
+		name: "Dinosuario",
+		category: "Remera",
+		price: 1200,
+		image : "remeraDinosaurio"
+	},
+	{
+		name: "Simpsons",
+		category: "Buzo",
+		price: 2000,
+		image : "buzoSimpsons"
+	},
+	{
+		name: "Bugs",
+		category: "Remera",
+		price: 1200,
+		image : "remeraBugs",
+	},
+	{
+		name: "Flama",
 		category: "Buzo",
 		price: 2500,
+		image : "remeraFlama",
 	},
 	{
 		name: "Armadura",
 		category: "Pantalon",
 		price: 3000,
+		image : "buzoEspacial",
 	},
     {
-		name: "Spider",
+		name: "Fantasma",
 		category: "Remera",
 		price: 1200,
-	},
+		image : "remeraFantasma",	},
 	{
-		name: "Harry Potter",
+		name: "Gatito",
 		category: "Remera",
 		price: 1200,
+		image : "remeraGatito",
 	},
 	{
-		name: "Muñeca",
+		name: "Ovni",
 		category: "Remera",
 		price: 1200,
+		image : "remeraOvni",
 	},
 	{
-		name: "Olivia",
+		name: "Cupcake",
 		category: "Remera",
 		price: 1200,
+		image : "remeraCupcake",
 	},
 	{
-		name: "Rayo",
-		category: "Remera",
+		name: "Papas Fritas",
+		category: "Buzo",
 		price: 1200,
+		image : "buzoPapas",
 	},
 	{
-		name: "Glaciar",
+		name: "Dibujos",
 		category: "Buzo",
 		price: 2000,
+		image : "buzoDibujos",
 	},
 	{
 		name: "Cargo",
 		category: "Pantalon",
 		price: 3000,
+		image : "pantalonCargo",
 	},
 	{
 		name: "Militar",
 		category: "Pantalon",
 		price: 3000,
+		image : "pantalonMilitar",
 	},
 	{
 		name: "Harry Potter",
 		category: "Buzo",
 		price: 2500,
+		image : "buzoHarryPotter",
 	},
 	{
 		name: "Plumas",
 		category: "Pantalon",
 		price: 3000,
+		image : "pantalonCapri",
 	},
 ];
 
@@ -110,11 +128,11 @@ const searchButton = document.getElementById("js-searchButton");
 
 /*Constante para añadir los productos al html*/
 const htmlTemplate = (product) => {
-	return `<div class="card">
+	return `<div class="card" >
                 <p class="card__name">${product.name}</p>
+				<img src="Imagenes/${product.image}.jpg" class="card__image" alt="Imagen producto">
                 <p class="card__category">${product.category}</p>
                 <p class="card__price">$${product.price}</p>
-				<img src="" class="card__image">${product.image}</img>
 				<button id="btn">Comprar</button>
             </div>`;
 			
@@ -126,7 +144,6 @@ const renderHTML = (products, container) => {
 	if (products.length > 0) {
 		for (const product of products) {
 			const productInHTML = htmlTemplate(product);
-
 			container.innerHTML += productInHTML;
 		}
 	} else {
@@ -220,3 +237,13 @@ $(document).ready(function () {
 		});
 	});
 });
+
+let miFormulario = document.getElementById("formulario");
+
+miFormulario = addEventListener("submit", validarFormulario);
+
+function validarFormulario(e){
+e.preventDefault();
+$("body").append("Formulario Enviado");    
+}
+

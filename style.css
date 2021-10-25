@@ -201,3 +201,10 @@ body {
 	font-weight: bold;
 }
 
+.card__image {
+	width: 40%;
+}
+
+.selectCategory {
+	align-self: flex-end;
+}
